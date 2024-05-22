@@ -232,7 +232,7 @@ button {
 
 /* 모달 창 */
 #modal {
-  /* position: fixed; */
+  position: fixed;
   display: none;
   justify-content: center;
   align-items: center;
