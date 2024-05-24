@@ -1,0 +1,173 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+/* 헤더 */
+header {
+  height: 50px;
+  background-color: rgb(31, 31, 31);
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 1rem;
+}
+.logo_title {
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+}
+.logo_title a {
+  text-decoration: none;
+}
+.logo_title i {
+  color: red;
+}
+.title {
+  color: white;
+  padding-left: 0.5rem;
+  font-weight: bold;
+}
+.header_icons i {
+  color: white;
+}
+.header_icons i:nth-child(2) {
+  padding-left: 0.5rem;
+}
+
+/* 비디오 영역 */
+.video_wrap {
+  height: calc(2 / 3 * 100vw);
+  background-color: black;
+}
+
+/* 정보 영역 */
+.infos_wrap {
+  display: flex;
+  flex-direction: column;
+}
+.tags {
+  margin: 1rem 0.5rem;
+}
+.tags a {
+  text-decoration: none;
+  color: cornflowerblue;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+.infos_wrap h1 {
+  font-size: 1.2rem;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+  padding: 0 0.5rem;
+}
+.infos_wrap span {
+  color: lightslategray;
+  font-size: 0.9rem;
+  padding: 0 0.5rem;
+}
+
+/* 아이콘 영역 */
+.icons_wrap {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: space-around;
+}
+.icons_wrap div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: dimgray;
+}
+.icons_wrap i {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+.horizon_line {
+  height: 1.5px;
+  background-color: slategray;
+  opacity: 0.2;
+  border-radius: 1px;
+  width: 95%;
+  margin: 0.5rem auto;
+}
+
+/* 프로필 영역 */
+.profiles_wrap {
+  padding: 0 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.profile_left {
+  display: flex;
+}
+.profile_img {
+  background-color: pink;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+}
+.profile_text {
+  display: flex;
+  flex-direction: column;
+  margin-left: 0.5rem;
+}
+.profile_text span:nth-child(2) {
+  color: slategray;
+  font-size: 0.8rem;
+  margin-top: 0.2rem;
+}
+
+/* 다른 비디오 영역 */
+.other_videos {
+  display: flex;
+  flex-direction: column;
+}
+.other_videos span {
+  color: slategray;
+  margin-left: 0.5rem;
+  font-size: 0.9rem;
+}
+.video_box {
+  display: flex;
+  padding: 0.5rem;
+  position: relative;
+}
+.thumbnail {
+  /* width: 120px; */
+}
+.thumbnail img {
+  width: 120px;
+}
+.other_info {
+  margin-left: 0.5rem;
+  display: flex;
+  flex-direction: column;
+}
+.other_info h1 {
+}
+.other_info span {
+  margin-top: 0.2rem;
+  margin-left: 0;
+  font-size: 0.7rem;
+}
+.other_more {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+}
+
+@media screen and (min-width: 768px) {
+  .divide_wrap {
+    display: flex;
+  }
+  .contents_left {
+    flex: 1;
+  }
+  .other_videos {
+    flex: 1;
+    margin-top: 0.5rem;
+  }
+}
